@@ -1,0 +1,32 @@
+.cover__overlay {
+    padding: 245px 315px 245px;
+    text-decoration: none;
+    background: rgba(42, 44, 47, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cover__overlay:hover {
+background: rgba(42, 44, 47, 0.8);
+}
+@media screen and (max-width: 1280px) {
+.cover__overlay {
+    padding: 195px 232px;
+}
+}
+@media screen and (max-width: 1024px) {
+.cover__overlay {
+    padding: 104px 115px;
+}
+}
+@media screen and (max-width: 768px) {
+.cover__overlay {
+    padding: 40px 100px;
+}
+}
+@media screen and (max-width: 425px) {
+.cover__overlay {
+    padding: 16px 33px;
+}
+}

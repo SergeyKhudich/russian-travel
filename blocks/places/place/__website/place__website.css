@@ -1,13 +1,18 @@
 .place__website {
     max-width: 456px;
     align-items: center;
-    align-self: flex-end;
+    align-self: flex-end; /* свойство применяется в грид-контейнере*/
 }
 @media screen and (max-width: 760px) {
     .place__website {
-        align-self: flex-start;
+        align-self: flex-start; /* свойство применяется во флекс-контейнере меньше 760px экрана*/
         order: 2;
         margin-top: 32px;
         margin-bottom: 32px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .place__website {
+        margin-left: 16px;
     }
 }

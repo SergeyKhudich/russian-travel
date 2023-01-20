@@ -5,24 +5,33 @@
     grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
     grid-template-rows: repeat(2, min-content);
     grid-auto-flow: column;
-    margin-bottom: 73px;
+    margin-bottom: 80px;
+}
+.place:last-child {
+    margin-bottom: 0;
+}
+@media screen and (max-width: 1279px) {
+    .place {
+        column-gap: 32px;
+        grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+    }
+}
+@media screen and (max-width: 1020px) {
+    .place {
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    }
 }
 @media screen and (max-width: 760px) {
     .place {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        row-gap: 0;
         align-items: center;
+        row-gap: 0;
     }
 }
 @media screen and (max-width: 425px) {
     .place {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        row-gap: 0;
-        align-items: center;
-        margin-bottom: 25px;
+        margin-bottom: 50px;
     }
 }

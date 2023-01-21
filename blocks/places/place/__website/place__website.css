@@ -1,18 +1,16 @@
 .place__website {
     max-width: 456px;
     align-items: center;
-    align-self: flex-end; /* свойство применяется в грид-контейнере*/
+    align-self: flex-end; /* Это грид-элемент контейнера "place". Если убрать, то будет не по макету, в моих браузерах работает. 
+    Пример-скриншот без этого свойства: https://disk.yandex.ru/i/4CbJWAGxUnJZSg   */
 }
 @media screen and (max-width: 760px) {
     .place__website {
-        align-self: flex-start; /* свойство применяется во флекс-контейнере меньше 760px экрана*/
+        align-self: flex-start; /* Это уже флекс-элемент контейнера "place" на размере экрана max 760px.
+        Пример-скриншот без этого свойства: https://disk.yandex.ru/i/tPoK5pnO9QJUCA    */
         order: 2;
         margin-top: 32px;
         margin-bottom: 32px;
-    }
-}
-@media screen and (max-width: 425px) {
-    .place__website {
         margin-left: 16px;
     }
 }

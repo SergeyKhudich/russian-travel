@@ -15,12 +15,12 @@
         .place__paragraph {
             order: 4;
             max-width: calc(100vw - 32px);
+            margin-top: 32px;
         }
     }
     @media screen and (max-width: 425px) {
         .place__paragraph {
             max-width: 100%;
-            margin-top: 32px;
             margin-left: 16px;
             margin-right: 16px;
         }
